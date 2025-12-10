@@ -1,0 +1,7 @@
+.env
+__pycache__/
+*.pkl
+data/vector_db/
+data/database/sccra_db.sqlite
+/data/complaints.csv
+/data/*.csv
