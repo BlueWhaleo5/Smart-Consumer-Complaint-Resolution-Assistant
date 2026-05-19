@@ -96,3 +96,5 @@ Dưới đây là tóm tắt các chỉ số vận hành thực tế của hệ 
 - Phase 3: ML Engine Implemented
 - Phase 4: RAG Initialized
 - Phase 5: Complete User Documentation
+
+Video demo link: https://youtu.be/tIF_BW6scpQ
