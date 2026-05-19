@@ -1,6 +1,14 @@
 # Smart Consumer Complaint & Resolution Assistant (SCCRA)
 
-An end-to-end AI/ML system designed to automate and intelligentize the process of handling consumer complaints. It combines Data Analytics, Predictive Machine Learning, and an LLM-based Retrieval-Augmented Generation (RAG) assistant.
+**SCCRA** is an enterprise-grade AI ecosystem designed to streamline and intelligentize the end-to-end lifecycle of consumer complaint management. By bridging the gap between raw data and actionable insights, SCCRA empowers organizations to handle massive volumes of feedback with precision and speed.
+
+## Core Pillars
+1.  **Intelligent Data Triage**: Leverages Machine Learning (**Random Forest + TF-IDF**) to automatically categorize complaints and predict severity, reducing manual processing time by identifying high-priority cases in real-time.
+2.  **Conversational Intelligence (RAG)**: Integrates a **Retrieval-Augmented Generation** assistant backed by **LangChain** and **Gemini/Llama-3**. It provides staff with instant, context-aware answers derived from internal policy documents and historical case resolutions.
+3.  **Visual Analytics Hub**: A powerful **Streamlit-based EDA dashboard** that transforms complex datasets (1.3M+ records) into interactive visualizations, exposing seasonal trends, product pain points, and geographic sentiment.
+
+## Why it Matters
+In an era where customer satisfaction is a primary differentiator, SCCRA provides a scalable solution to handle the **7GB+** Consumer Complaint Database, ensuring no complaint goes unnoticed and every resolution is backed by historical intelligence.
 
 ## Key Features
 - **Data EDA Dashboard**: Real-time visualization and analytics of complaint data
