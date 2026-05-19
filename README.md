@@ -65,7 +65,7 @@ python run.py --all
 By default, SCCRA uses Groq `llama-3.3-70b-versatile` for the RAG engine.
 You can define your API key in a `.env` file at the root level:
 ```env
-ROQ_API_KEY="your-groq-key"
+GROQ_API_KEY="your-groq-key"
 ```
 Or you can use localized models like Llama 3 via Ollama by changing `use_local=True` in `app/main.py`.
 
