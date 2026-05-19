@@ -36,7 +36,7 @@ class ComplaintPredictor:
 
         return product, confidence, priority, reason
 
-# Code để test nhanh file predict
+# Debug
 if __name__ == "__main__":
     predictor = ComplaintPredictor()
     sample = "My house is at risk of foreclosure because of a bank error!"

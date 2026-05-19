@@ -69,6 +69,20 @@ GOOGLE_API_KEY="your-google-gemini-key"
 ```
 Or you can use localized models like Llama 3 via Ollama by changing `use_local=True` in `app/main.py`.
 
+## Performance Evaluation (Đánh giá hiệu năng)
+
+Dưới đây là tóm tắt các chỉ số vận hành thực tế của hệ thống SCCRA:
+
+| Chỉ số | Thời gian / Đánh giá | Ghi chú |
+| :--- | :--- | :--- |
+| **Xử lý yêu cầu chung** | ~1 phút | Tổng thời gian trung bình cho các tác vụ đơn lẻ |
+| **Phản hồi Trợ lý ảo (RAG)** | 2 - 3 phút | Phụ thuộc vào độ phức tạp của câu hỏi và lượng dữ liệu cần truy vấn |
+| **Huấn luyện Model (Training)** | 45p - 1h+ | Bao gồm làm sạch dữ liệu, xử lý tính năng và train Random Forest |
+| **Độ chính xác phân loại** | Rất tốt (Keyword-based) | Hoạt động cực kỳ hiệu quả khi dựa trên từ khóa mẫu; khả năng tự đánh giá (self-eval) đang được cải thiện |
+
+> [!NOTE]
+> Thời gian huấn luyện và xử lý dữ liệu bị ảnh hưởng lớn bởi kích thước file `complaints.csv` (thường > 7GB). Khuyến khích sử dụng các tập dữ liệu mẫu nhỏ hơn để test nhanh.
+
 ## Acknowledgments
 - Phase 1 & 2: Data Pipeline Implemented
 - Phase 3: ML Engine Implemented
