@@ -77,19 +77,19 @@ GROQ_API_KEY="your-groq-key"
 ```
 Or you can use localized models like Llama 3 via Ollama by changing `use_local=True` in `app/main.py`.
 
-## Performance Evaluation (Đánh giá hiệu năng)
+## Performance Evaluation
 
-Dưới đây là tóm tắt các chỉ số vận hành thực tế của hệ thống SCCRA:
+Below is a summary of the actual performance metrics of the SCCRA system:
 
-| Chỉ số | Thời gian / Đánh giá | Ghi chú |
+| Metric | Time / Rating | Notes |
 | :--- | :--- | :--- |
-| **Xử lý yêu cầu chung** | ~1 phút | Tổng thời gian trung bình cho các tác vụ đơn lẻ |
-| **Phản hồi Trợ lý ảo (RAG)** | 2 - 3 phút | Phụ thuộc vào độ phức tạp của câu hỏi và lượng dữ liệu cần truy vấn |
-| **Huấn luyện Model (Training)** | 45p - 1h+ | Bao gồm làm sạch dữ liệu, xử lý tính năng và train Random Forest |
-| **Độ chính xác phân loại** | Rất tốt (Keyword-based) | Hoạt động cực kỳ hiệu quả khi dựa trên từ khóa mẫu; khả năng tự đánh giá (self-eval) đang được cải thiện |
+| **General Request Processing** | ~1 minute | Average total time for individual tasks |
+| **Random Assistant Response (RAG)** | 2 - 3 minutes | Depends on the complexity of the query and the amount of data to be queried |
+| **Model Training** | 45p - 1+ hour | Includes data cleaning, feature processing, and Random Forest training |
+| **Classification Accuracy** | Very good (Keyword-based) | Extremely effective when based on sample keywords; self-eval capabilities are improving |
 
 > [!NOTE]
-> Thời gian huấn luyện và xử lý dữ liệu bị ảnh hưởng lớn bởi kích thước file `complaints.csv` (thường > 7GB). Khuyến khích sử dụng các tập dữ liệu mẫu nhỏ hơn để test nhanh.
+> Training and data processing time is significantly affected by the size of the `complaints.csv` file (usually > 7GB). Using smaller sample datasets for faster testing is recommended.
 
 ## Acknowledgments
 - Phase 1 & 2: Data Pipeline Implemented
