@@ -1,6 +1,6 @@
 # Smart Consumer Complaint & Resolution Assistant (SCCRA)
 
-**SCCRA** is an enterprise-grade AI ecosystem designed to streamline and intelligentize the end-to-end lifecycle of consumer complaint management. By bridging the gap between raw data and actionable insights, SCCRA empowers organizations to handle massive volumes of feedback with precision and speed.
+**SCCRA** is an AI ecosystem designed to streamline and intelligentize the end-to-end lifecycle of consumer complaint management. SCCRA empowers organizations to handle massive volumes of feedback with precision and speed.
 
 ## Core Pillars
 1.  **Intelligent Data Triage**: Leverages Machine Learning (**Random Forest + TF-IDF**) to automatically categorize complaints and predict severity, reducing manual processing time by identifying high-priority cases in real-time.
